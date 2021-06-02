@@ -15,6 +15,7 @@
   },
   "author": "Seth Berrier",
   "license": "MIT",
+  "repository": "github:Olliebrown/esnext-esbuild-react",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "esbuild": "^0.12.5",
