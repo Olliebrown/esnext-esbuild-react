@@ -19,6 +19,10 @@
   "plugins": [
     "react"
   ],
+  "globals": {
+    "_VER_": false,
+    "_DEV_": false
+  },
   "settings": {
     "react": { "version": "detect" }
   },
