@@ -8,9 +8,8 @@
     "build": "run-s clean prod-bundle",
     "clean": "rm -f public/app.*",
     "prod-bundle": "node build.js",
-    "dev": "run-p dev-bundle dev-serve",
-    "dev-bundle": "node build.js dev",
-    "dev-serve": "node build.js dev serve",
+    "dev": "run-p clean dev-bundle",
+    "dev-bundle": "node build.js dev serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Seth Berrier",
