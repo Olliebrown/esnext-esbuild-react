@@ -4,7 +4,7 @@ Yet another React base template designed with simplicity in the tool-chain and s
 - Supports as modern of ES standard as possible (ESNext).
 - Uses eslint to enforce ALL React, React-Hooks, and StandardJS coding rules and styles.
 - Uses ESBuild to transpile and bundle.
-- Includes Browser-sync for dev server.
+- Uses ESBuild's built-in server for development.
 
 ## Basic Usage
 ### Tools and Initialization
@@ -20,3 +20,7 @@ Yet another React base template designed with simplicity in the tool-chain and s
 ### Deployment
 - Run `npm run build` to build a minified production version in the `public` folder
 - App is contained entirely in the public folder
+
+### Notes
+- When running in development mode, the global boolean `_DEV_` will be true in your JS code
+- `_VER_` is a global string equal to your semantic version in package.json
