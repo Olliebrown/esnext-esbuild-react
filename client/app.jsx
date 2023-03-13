@@ -1,7 +1,31 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
 
-ReactDOM.render(
-  <h1>{'Hello Again React!'}</h1>,
-  document.getElementById('root')
-)
+export default function App (props) {
+  const { title, children } = props
+  return (
+    <React.Fragment>
+      <h1
+        style={{
+          marginTop: '32px',
+          marginBottom: '32px',
+          paddingBottom: '8px',
+          borderBottom: '1px solid lightgrey'
+        }}
+      >
+        {title}
+      </h1>
+      <p>{children}</p>
+    </React.Fragment>
+  )
+}
+
+App.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string
+}
+
+App.defaultProps = {
+  children: null,
+  title: 'Hello, React!'
+}

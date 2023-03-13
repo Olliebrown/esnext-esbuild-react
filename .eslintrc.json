@@ -3,26 +3,26 @@
     "browser": true,
     "es2021": true
   },
+  "globals": {
+    "_DEV_": "readonly",
+    "_VER_": "readonly",
+    "process.env.NODE_ENV": "readonly"
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/all",
     "plugin:react-hooks/recommended",
     "standard"
   ],
+  "overrides": [
+  ],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": [
     "react"
   ],
-  "globals": {
-    "_VER_": false,
-    "_DEV_": false
-  },
   "settings": {
     "react": { "version": "detect" }
   },
